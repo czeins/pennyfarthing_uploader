@@ -1,0 +1,9 @@
+<h1>Create an account</h1>
+<p>Awesome. So stoked. So very very stoked.</p>
+
+<%= form_for @user do |f| %>
+<%= f.text_field :username, placeholder: "username" %>
+<%= f.email_field :password, placeholder: "email" %>
+<%= f.password_field :password, placeholder: "password" %>
+<%= f.submit %>
+<% end %>
