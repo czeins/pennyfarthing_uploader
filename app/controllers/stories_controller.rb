@@ -1,4 +1,7 @@
 class StoriesController < ApplicationController
+
+  before_action :require_user
+
   def new
     @story = Story.new
   end

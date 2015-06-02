@@ -9,4 +9,10 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :stories, except: [:index]
   resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
+
+    namespace :api do
+      namespace :v1 do
+        resources :stories, only: [:index, :show]
+      end
+    end
 end
