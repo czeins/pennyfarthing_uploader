@@ -1,2 +1,8 @@
-<h1>Oh, so you'd like to create</h1>
-<p>Find me in app/views/stories/new.html.erb</p>
+<h1>Oh, so you'd like to create a new story, eh?</h1>
+<p>Awesome possum. Let's get started.</p>
+
+<%= form_for @story, url: "/stories" do |f| %>
+<%= f.text_field :title, placeholder: "title" %><br>
+<%= f.text_area raw(:html), placeholder: "your html" %>
+<%= f.submit %>
+<% end %>
