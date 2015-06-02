@@ -1,8 +1,20 @@
-<h1>EDIT DAT ENTRAYYYYY</h1>
-<p>Whaaaaaaa</p>
+<div class="row text-center">
+  <h1>EDIT DAT ENTRAYYYYY</h1>
+  <p class="tagline">Whaaaaaaa</p>
+</div>
 
-<%= form_for @story do |f| %>
-<%= f.text_field :title%><br>
-<%= f.text_area :html %>
-<%= f.submit %>
-<% end %>
+
+<div class="row text-center signin">
+  <div class="col-lg-10 col-lg-offset-1">
+    <%= form_for @story do |f| %>
+      <div class="form-group">
+        <%= f.text_field :title, class: 'form-control'%><br>
+
+        <%= f.text_area raw(:html), class: 'form-control',  rows: "12" %>
+      </div>
+        <%= f.submit "Edit story", class: 'btn btn-success'%>
+      </div>
+    <% end %>
+  </div>
+
+</div>

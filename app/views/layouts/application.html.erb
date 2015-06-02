@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>PennyfarthingUploader</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -32,7 +35,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.username %> <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Edit Profile</a></li>
-              <li><a href="#">Create Post</a></li>
+              <li><%= link_to "Add a story", new_story_path %></li>
               <li class="divider"></li>
               <li><a href="#"><%= link_to "Logout", logout_path %></a></li>
             </ul>
@@ -46,8 +49,9 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
+<div class="container-custom">
 <%= yield %>
+</div>
 
 </body>
 </html>

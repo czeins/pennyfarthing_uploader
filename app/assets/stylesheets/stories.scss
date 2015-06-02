@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-  color: blue;
+.html {
+  margin-top: 10px;
+}
+
+.btn-success {
+  background-color: #DB7C26 !important;
+  border: 1px solid #c16d22 !important;
+}
+
+.btn-success:hover {
+  background-color: #b26623 !important;
 }
