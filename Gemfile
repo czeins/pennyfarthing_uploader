@@ -29,8 +29,11 @@ gem 'bcrypt', '~> 3.1.7'
 # Uses bootstrap
 gem 'bootstrap-sass'
 
+gem 'figaro'
+
 #carrierwave
 gem 'carrierwave', '0.10.0'
+gem 'fog', '1.23.0'
 
 #minimagic gem
 gem 'mini_magick', '3.8.0'
