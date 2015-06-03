@@ -29,6 +29,12 @@ gem 'bcrypt', '~> 3.1.7'
 # Uses bootstrap
 gem 'bootstrap-sass'
 
+#carrierwave
+gem 'carrierwave', '0.10.0'
+
+#minimagic gem
+gem 'mini_magick', '3.8.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

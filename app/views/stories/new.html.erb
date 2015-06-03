@@ -10,6 +10,7 @@
         <%= f.text_field :title, placeholder: "title", class: 'form-control'%><br>
 
         <%= f.text_area raw(:html), placeholder: "your html", class: 'form-control',  rows: "12" %>
+        <%= f.file_field :headerimg, class: 'form-control' %>
       </div>
         <%= f.submit "Add story", class: 'btn btn-success'%>
       </div>

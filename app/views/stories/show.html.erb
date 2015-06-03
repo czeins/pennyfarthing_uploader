@@ -10,6 +10,12 @@
   </div>
 </div>
 
+<div class="row html">
+  <div class="col-lg-8 col-lg-offset-2  well">
+    <p><%= image_tag @story.headerimg.url if @story.headerimg? %></p>
+  </div>
+</div>
+
 <div class="row text-center html">
 <%= link_to "Edit", edit_story_path, class: 'btn btn-default' %> <%= link_to "Delete", @story, method: :delete, class: 'btn btn-success' %>
 </div>
