@@ -11,6 +11,9 @@
         <%= f.text_field :title, class: 'form-control'%><br>
 
         <%= f.text_area raw(:html), class: 'form-control',  rows: "12" %>
+
+        <%= f.file_field :headerimg, class: 'form-control' %>
+        <%= image_tag @story.headerimg.url if @story.headerimg? %>
       </div>
         <%= f.submit "Edit story", class: 'btn btn-success'%>
       </div>
