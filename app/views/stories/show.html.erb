@@ -1,18 +1,17 @@
-
 <div class="row text-center">
   <h1><%= @story.title %></h1>
 </div>
 
 
 <div class="row html">
-  <div class="col-lg-8 col-lg-offset-2  well">
+  <div class="col-md-8 col-md-offset-2  well">
     <p><%= @story.html %></p>
   </div>
 </div>
 
 <div class="row html">
-  <div class="col-lg-8 col-lg-offset-2  well">
-    <p><%= image_tag @story.headerimg.url if @story.headerimg? %></p>
+  <div class="col-md-8 col-md-offset-2  well">
+    <p><%= image_tag @story.headerimg.url, class: 'img-responsive' if @story.headerimg? %></p>
   </div>
 </div>
 

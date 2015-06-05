@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   resources :sessions, only: [:new, :create, :destroy]
-  resources :stories, except: [:index]
+  resources :stories
   resources :users, only: [:new, :create, :show, :edit, :update, :destroy]
 
     namespace :api do
